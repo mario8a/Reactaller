@@ -6,12 +6,13 @@ import {
  } from "react-router-dom";
 import { Home } from './pages/Home';
 import { MovieDetails } from './pages/MovieDetails';
+import {NavBar} from './modules/general/NavBar';
 
 export const MovieApp = () => {
    return (
       <div>
-         Barra de nav
          <Router>
+         <NavBar/>
             <div>
                <Switch>
                   <Route exact path="/" component={Home}/>
